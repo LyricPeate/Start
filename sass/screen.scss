@@ -1,0 +1,17 @@
+@import "partials/reset";
+@import "partials/flask-framework";
+@import "partials/flask-typography";
+
+
+/* -------------------------------------------------
+** LAYOUT
+** ---------------------------------------------- */
+
+.wrapper { 
+    @include outer-container();
+    background: #ccc;
+    @include media($small){
+        @include span-columns(6);
+        @include shift(3);
+    }
+}
